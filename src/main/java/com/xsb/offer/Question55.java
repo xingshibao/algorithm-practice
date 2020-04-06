@@ -56,6 +56,9 @@ public class Question55 {
     }
 
     public static void main(String[] args) {
-
+        // 直接用leetcode的测试用例过的
+        Question55 question55 = new Question55();
+        int depth = question55.depth(null);
+        System.out.println(depth);
     }
 }
