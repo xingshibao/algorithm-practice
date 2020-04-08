@@ -1,7 +1,5 @@
 package com.xsb.offer;
 
-import java.util.List;
-
 /**
  * @author shibao.xing
  * @since 2020-04-08 22:19
@@ -61,6 +59,7 @@ public class Question24 {
             tmp = tmp.next;
         }
         System.out.println();
+
         ListNode node = question24.reverseList(node1);
         while (node != null) {
             System.out.printf("%d->", node.val);
