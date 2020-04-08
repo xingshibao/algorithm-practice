@@ -1,5 +1,7 @@
 package com.xsb.offer;
 
+import java.util.List;
+
 /**
  * @author shibao.xing
  * @since 2020-04-08 22:19
@@ -41,6 +43,28 @@ public class Question24 {
     }
 
     public static void main(String[] args) {
+        Question24 question24 = new Question24();
+        ListNode node1 = question24.new ListNode(1);
+        ListNode node2 = question24.new ListNode(2);
+        ListNode node3 = question24.new ListNode(3);
+        ListNode node4 = question24.new ListNode(4);
+        ListNode node5 = question24.new ListNode(5);
 
+        node1.next = node2;
+        node2.next = node3;
+        node3.next = node4;
+        node4.next = node5;
+
+        ListNode tmp = node1;
+        while (tmp != null) {
+            System.out.printf("%d->", tmp.val);
+            tmp = tmp.next;
+        }
+        System.out.println();
+        ListNode node = question24.reverseList(node1);
+        while (node != null) {
+            System.out.printf("%d->", node.val);
+            node = node.next;
+        }
     }
 }
