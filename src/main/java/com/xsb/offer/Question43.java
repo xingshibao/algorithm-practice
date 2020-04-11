@@ -26,7 +26,7 @@ public class Question43 {
 
     public static void main(String[] args) {
         Question43 question43 = new Question43();
-        int i = question43.countDigitOne(99);
+        int i = question43.countDigitOne(15);
         System.out.println(i);
     }
 }
