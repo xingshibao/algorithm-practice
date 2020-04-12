@@ -12,6 +12,9 @@ import java.util.Set;
  */
 public class Question48 {
 
+    /**
+     * 滑动窗口，和求数字序列和等于某值同类型
+     */
     public int lengthOfLongestSubstring(String s) {
         int maxLenth = 0;
         int i = 0;
