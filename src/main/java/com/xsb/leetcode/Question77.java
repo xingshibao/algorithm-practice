@@ -63,7 +63,7 @@ public class Question77 {
             result.add(new ArrayList<>(list));
         }
 
-        for (int i = s; i <= e ; i++) {
+        for (int i = s; i <= e; i++) {
             list.add(arr[i]);
             combine2(arr, i + 1, e, k, list);
             list.removeLast();
